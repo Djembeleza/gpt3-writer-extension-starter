@@ -1,0 +1,49 @@
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #ffffff;
+        --accent-color: #30c2e6;
+        --text-color: #8f6bd2;
+    }
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #16151b;
+        --accent-color: #50b94a;
+        --text-color: #ffcb12;
+    }
+  }
+
+
+body {
+    min-width: 250px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#key_entered {
+    display: none;
+}
+
+input {
+    padding: 0.6rem 0.8rem;
+    border-radius: 1rem;
+}
+
+.btn {
+    margin-top: 0.6rem;
+    padding: 0.4rem 0.65rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+    font-weight: 600;
+}
